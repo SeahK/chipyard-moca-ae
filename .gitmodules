@@ -61,6 +61,7 @@
 [submodule "generators/gemmini"]
 	path = generators/gemmini
 	url = https://github.com/ucb-bar/gemmini
+	branch = MOCA
 [submodule "software/firemarshal"]
 	path = software/firemarshal
 	url = https://github.com/firesim/FireMarshal.git
