@@ -60,8 +60,7 @@
 	url = https://github.com/ucb-bar/coremark-workload.git
 [submodule "generators/gemmini"]
 	path = generators/gemmini
-	url = https://github.com/ucb-bar/gemmini.git
-	branch = MOCA
+	url = https://github.com/ucb-bar/gemmini
 [submodule "software/firemarshal"]
 	path = software/firemarshal
 	url = https://github.com/firesim/FireMarshal.git
