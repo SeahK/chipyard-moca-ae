@@ -49,6 +49,15 @@ class GemminiRocketConfig extends Config(
   new gemmini.DefaultGemminiConfig ++                            // use Gemmini systolic array GEMM accelerator
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++
   new chipyard.config.AbstractConfig)
+
+
+
+class GemminiMOCAConfig extends Config(
+  new gemmini.MOCAGemminiConfig ++                            // use Gemmini systolic array GEMM accelerator
+  new freechips.rocketchip.subsystem.WithNBigCores(8) ++
+  new freechips.rocketchip.subsystem.WithInclusiveCache(nWays=2, capacityKB=2048, nBanks=8) ++
+  new freechips.rocketchip.subsystem.WithNMemoryChannels(2) ++ 
+  new chipyard.config.AbstractConfig)
 // DOC include end: GemminiRocketConfig
 
 class FPGemminiRocketConfig extends Config(
