@@ -202,6 +202,13 @@ class FireSimGemminiRocketConfig extends Config(
   new WithFireSimConfigTweaks ++
   new chipyard.GemminiRocketConfig)
 
+class FireSimGemminiMOCAConfig extends Config(
+  new WithDefaultFireSimBridges ++
+  new WithDefaultMemModel ++
+  new WithFireSimConfigTweaks ++
+  new chipyard.GemminiMOCAConfig)
+
+
 //******************************************************************
 // Configuration with Ring topology SystemBus
 //******************************************************************
